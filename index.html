@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script src="billPage.html"></script>
+
+  <title>Billing Software</title>
+</head>
+<body >
+  <section class="bg-gray-900 p-6 h-screen w-full overflow-y-auto" >
+    <div class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-lg">
+      <h1 class="text-2xl font-bold text-center mb-4">Billing Software</h1>
+
+      <!-- Product Form -->
+      <form id="productForm" class="flex items-center space-x-4 mb-6">
+        <input
+          type="text"
+          id="productName"
+          placeholder="Enter Product Name"
+          class="flex-1 border-gray-300 border rounded p-2"
+          required
+        />
+        <input
+          type="number"
+          id="productPrice"
+          placeholder="Enter Product Price"
+          class="flex-1 border-gray-300 border rounded p-2"
+          min="1"
+          required
+        />
+        <button
+          type="submit"
+          class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+        >
+          Add Product
+        </button>
+      </form>
+
+      <!-- Products Table -->
+      <table class="w-full border-collapse border border-gray-300">
+        <thead>
+          <tr>
+            <th class="border border-gray-300 px-4 py-2">Product Name</th>
+            <th class="border border-gray-300 px-4 py-2 text-right">Price (₹)</th>
+            <th class="border border-gray-300 px-4 py-2 text-right">GST (₹)</th>
+            <th class="border border-gray-300 px-4 py-2 text-right">Total (₹)</th>
+          </tr>
+        </thead>
+        <tbody id="productTable"></tbody>
+      </table>
+
+      <!-- Totals Section -->
+      <div class="mt-6 text-right">
+        <p class="font-semibold">Subtotal: ₹ <span id="totalAmount">0.00</span></p>
+        <p class="font-semibold">Total GST: ₹ <span id="totalGST">0.00</span></p>
+        <p class="text-lg font-bold">Grand Total: ₹ <span id="grandTotal">0.00</span></p>
+      </div>
+
+      <!-- Buttons -->
+      <div class="flex justify-between mt-6">
+        <button
+          id="resetButton"
+          class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
+        >
+          Reset
+        </button>
+        <button
+          id="viewBillButton"
+          class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+        >
+          View Bill
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Billing Software</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <div class="bg-white shadow-lg rounded-lg p-6 w-96">
+    <h1 class="text-2xl font-bold text-center mb-4">Billing Software</h1> -->
+    
+    <!-- Input Section -->
+    <!-- <div class="mb-4">
+      <input
+        id="productName"
+        type="text"
+        placeholder="Enter Product Name"
+        class="border border-gray-300 rounded w-full px-3 py-2 mb-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+      />
+      <input
+        id="productPrice"
+        type="number"
+        placeholder="Enter Product Price"
+        class="border border-gray-300 rounded w-full px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+      />
+      <button
+        id="addProductBtn"
+        class="w-full bg-green-500 text-white py-2 mt-2 rounded hover:bg-green-600"
+      >
+        Add Product
+      </button>
+    </div> -->
+    
+    <!-- Product Table -->
+    <!-- <div class="mb-4">
+      <table class="w-full border-collapse border border-gray-200">
+        <thead>
+          <tr class="bg-gray-100">
+            <th class="border border-gray-300 px-4 py-2 text-left">Product Name</th>
+            <th class="border border-gray-300 px-4 py-2 text-right">Price (₹)</th>
+          </tr>
+        </thead>
+        <tbody id="productTable"> -->
+          <!-- Dynamic rows will be added here -->
+        <!-- </tbody>
+      </table>
+    </div> -->
+
+    <!-- Total Section -->
+    <!-- <div class="text-right">
+      <p class="text-lg font-semibold">Total: ₹ <span id="totalAmount">0.00</span></p>
+      <p class="text-lg font-semibold">GST (18%): ₹ <span id="totalWithGST">0.00</span></p>
+      <p class="text-lg font-semibold">grand total: ₹ <span id="grandTotal">0.00</span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Billing Software</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body >
+  <section class="h-screen w-full">
+    <form class="bg-black  flex items-center justify-center h-screen"></form>
+      <div class=" shadow-lg rounded-lg p-6 w-96">
+        <h1 class="text-2xl font-bold text-center mb-4">Billing Software</h1> -->
+        
+        <!-- Input Section -->
+        <!-- <div class="mb-4">
+          <input
+            id="productName"
+            type="text"
+            placeholder="Enter Product Name"
+            class="border border-gray-300 rounded w-full px-3 py-2 mb-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          />
+          <input
+            id="productPrice"
+            type="number"
+            placeholder="Enter Product Price"
+            class="border border-gray-300 rounded w-full px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          />
+          <button
+            id="addProductBtn"
+            class="w-full bg-green-500 text-white py-2 mt-2 rounded hover:bg-green-600"
+          >
+            Add Product
+          </button>
+        </div>
+         -->
+        <!-- Product Table -->
+        <!-- <div class="mb-4">
+          <table class="w-full border-collapse border border-gray-200">
+            <thead>
+              <tr class="bg-gray-100">
+                <th class="border border-gray-300 px-4 py-2 text-left">Product Name</th>
+                <th class="border border-gray-300 px-4 py-2 text-right">Price (₹)</th>
+              </tr>
+            </thead>
+            <tbody id="productTable"> -->
+              <!-- Dynamic rows will be added here -->
+            <!-- </tbody>
+          </table>
+        </div> -->
+
+        <!-- Total Section -->
+        <!-- <div class="text-right">
+          <p class="text-lg font-semibold">Total: ₹ <span id="totalAmount">0.00</span></p>
+          <p class="text-lg font-semibold">Total with GST (18%): ₹ <span id="totalWithGST">0.00</span></p>
+        </div>
+      </div>
+    </form>
+
+  </section>
+  
+  <script src="script.js"></script>
+</body>
+</html> -->
